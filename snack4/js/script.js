@@ -14,18 +14,21 @@ var cognomi = ["Lavandino","Rubinetto","Salone","Tavolo"];
 // controllo cognomi
 console.log(cognomi);
 
-// chiamata funzione
-generatoreNomiCognomi(nomi,cognomi);
+// // chiamata funzione dentro al ciclo
+for(var i=0; i<10; i++) {
 
-// generatore di 10 nomi e cognomi inseriti in una lista
+    generatoreNomiCognomi(nomi,cognomi);
+
+}
+
+// generatore nomi e cognomi casuali inseriti in una lista
 function generatoreNomiCognomi(arrayNomi, arrayCognomi){
+    
     // ul
     var ul = document.getElementById("lista");
 
-    // ciclo lista html
-    for(var i=0; i<10; i++){
-        ul.innerHTML += "<li>" + arrayNomi[random(0,arrayNomi.length)] + " " + arrayCognomi[random(0,arrayNomi.length)] + "</li>"; 
-    }
+    ul.innerHTML += "<li>" + arrayNomi[random(0,arrayNomi.length)] + " " + arrayCognomi[random(0,arrayNomi.length)] + "</li>"; 
+    
 }
 
 // numero casuale con min e max
