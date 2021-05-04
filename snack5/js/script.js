@@ -6,55 +6,32 @@
 // Crea un array vuoto.
 var arr = [];
 
+// numero utente
 var numeroUtente;
 
-
 for(i=0; i<6; i++){
-    
+    // richiesta numero
     do {
         numeroUtente = parseInt(prompt("inserisci un numero"));
     }
+    // controllo che sia un numero
     while(isNaN(numeroUtente));
-    
+
+    // stampa numero inserito
     console.log("numero inserito",numeroUtente);
-    
+
+    // se il numero inserito è dispari inseriscilo nell'array
     if(controlloNumero(numeroUtente)){
         arr.push(numeroUtente);
    }
  
 }
-
+// stampa array con numeri dispari inseriti
 console.log("numeri dispari: ", arr);
 
-// // funzione che controlla se numero è dispari e lo inserisce nell'array
+// // funzione che controlla se numero è dispari
 function controlloNumero(numeroDaControllare){
     if(numeroDaControllare % 2 == 1){
         return true;
     } 
 } 
-
-
-
-
-// for(i=0; i<6; i++){
-    
-//     do{
-//         numeroUtente = parseInt(prompt("inserisci un numero"));
-//     }
-//     while(isNaN(numeroUtente));
-
-//     console.log("numero inserito",numeroUtente);
-//     controlloNumero(numeroUtente,arr);
-//     console.log(i);
-  
-// }
-
-
-// console.log("numeri dispari: ", arr);
-
-// // funzione che controlla se numero è dispari e lo inserisce nell'array
-// function controlloNumero(numeroDaControllare, arrayNumeri){
-//     if(numeroDaControllare % 2 == 1){
-//         arrayNumeri.push(numeroDaControllare);
-//     } 
-// } 

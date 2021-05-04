@@ -17,22 +17,21 @@ console.log(cognomi);
 // chiamata funzione
 generatoreNomiCognomi(nomi,cognomi);
 
-
-
 // generatore di 10 nomi e cognomi inseriti in una lista
 function generatoreNomiCognomi(arrayNomi, arrayCognomi){
     // ul
     var ul = document.getElementById("lista");
-    for(var i=0; i<10; i++){
-        ul.innerHTML += "<li>" + arrayNomi[random(0,arrayNomi.length)] + " " + arrayCognomi[random(0,arrayNomi.length)] + "</li>";
-       
-    }
 
+    // ciclo lista html
+    for(var i=0; i<10; i++){
+        ul.innerHTML += "<li>" + arrayNomi[random(0,arrayNomi.length)] + " " + arrayCognomi[random(0,arrayNomi.length)] + "</li>"; 
+    }
 }
 
+// numero casuale con min e max
 function random(min, max) {
     return Math.floor(min + Math.random() * (max - min));
-  }
+}
 
  
 
