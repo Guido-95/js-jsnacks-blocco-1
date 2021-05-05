@@ -21,7 +21,7 @@ for(i=0; i<6; i++){
     console.log("numero inserito",numeroUtente);
 
     // se il numero inserito è dispari inseriscilo nell'array
-    if(controlloNumero(numeroUtente)){
+    if(controlloNumeroDispari(numeroUtente)){
         arr.push(numeroUtente);
    }
  
@@ -30,7 +30,7 @@ for(i=0; i<6; i++){
 console.log("numeri dispari: ", arr);
 
 // // funzione che controlla se numero è dispari
-function controlloNumero(numeroDaControllare){
+function controlloNumeroDispari(numeroDaControllare){
     if(numeroDaControllare % 2 == 1){
         return true;
     } 
